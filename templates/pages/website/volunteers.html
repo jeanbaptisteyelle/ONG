@@ -1,0 +1,100 @@
+{% extends 'base/base.html' %}
+{%block content%}
+{% load static %}
+
+    <!-- Page Banner Section -->
+    <section class="page-banner">
+        <div class="image-layer" style="background-image: url('{% static 'images/background/bg-page-title.jpg' %}');"></div>
+
+        <div class="auto-container">
+            <h1>Volunteers</h1>
+        </div>
+
+        <div class="breadcrumb-box">
+            <div class="auto-container">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Our Team</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!--End Banner Section -->
+
+    <!--Team Section-->
+    <section class="team-section team-page">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!--Team Block-->
+                <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms">
+                    <div class="inner-box">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-1.jpg' %}" alt=""></a></figure>
+                        <h3><a href="#">Scott William</a></h3>
+                        <div class="designation">Head of Team</div>
+                    </div>
+                </div>
+                <!--Team Block-->
+                <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="300ms">
+                    <div class="inner-box">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-2.jpg' %}" alt=""></a></figure>
+                        <h3><a href="#">Liam Irvines</a></h3>
+                        <div class="designation">Senior Admin</div>
+                    </div>
+                </div>
+                <!--Team Block-->
+                <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="600ms">
+                    <div class="inner-box">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-3.jpg' %}" alt=""></a></figure>
+                        <h3><a href="#">Diana Leslie</a></h3>
+                        <div class="designation">Junior Volunteer</div>
+                    </div>
+                </div>
+                <!--Team Block-->
+                <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms">
+                    <div class="inner-box">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-4.jpg' %}" alt=""></a></figure>
+                        <h3><a href="#">Scott William</a></h3>
+                        <div class="designation">Head of Team</div>
+                    </div>
+                </div>
+                <!--Team Block-->
+                <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="300ms">
+                    <div class="inner-box">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-5.jpg' %}" alt=""></a></figure>
+                        <h3><a href="#">Sarah Conor</a></h3>
+                        <div class="designation">Junior Admin</div>
+                    </div>
+                </div>
+                <!--Team Block-->
+                <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="600ms">
+                    <div class="inner-box">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-6.jpg' %}" alt=""></a></figure>
+                        <h3><a href="#">Diana Leslie</a></h3>
+                        <div class="designation">Junior Volunteer</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom-info-box">
+        <div class="auto-container">
+            <div class="content">
+                <div class="sec-title centered light">
+                    <div class="upper-icon"></div>
+                    <h2>We help thousands of children, arrange food & building houses!</h2>
+                </div>
+                <div class="text">Raise money for charity and personal causes Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliquau ut enim ad lorea veniam.</div>
+                <ul class="info clearfix">
+                    <li><a href="tel:812-070-3692"><span class="fa fa-phone-alt"></span> Support us 812-070-3692</a></li>
+                    <li><a href="mailto:donations@example.org"><span class="fa fa-envelope-open"></span> donations@example.org2</a></li>
+                </ul>
+                <div class="link-box"><a href="donate.html" class="theme-btn btn-style-one"><span class="btn-title">start fundrising</span></a></div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content%}

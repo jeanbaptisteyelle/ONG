@@ -1,0 +1,71 @@
+                                                      Website(application)
+                                                     
+                                          
+*siteinfo                       * newletter             * Reseau_sociaux       *contact          *information     *lieu          *need_people
+  -carousel_bg                   -email                  -icon                 -image_bg         -nom              -pays          -titre
+  -titre_caroussel                                        -nom                  -titre            -email           -adresse       -description
+  -telephone                                             -lien                  -description      -telephone       -phone         -lien_video
+  -courriel                                                                     -icon             -help            -email         -proposition
+  -adresse                                                                      -information(fk)  -message
+  -slogan                                                                       -lieu(fk)
+  -logo_slogan                                                                  
+  -image_don
+  -message_join_volunter        *fundrising             *temoignage             *payment_amount    *adopt             *like
+  -background_about              -titre                  -message                 -card_number      -titre             -item(fk-->beneficiaire)
+  -background_blog               -description            -nom                     -expiry           -description       -user
+  -background_blog_single                                -fontion                 -cvc              -name
+  -background_causes                                                                                -ages
+  -background_cause-single                                                                          -race
+  -background_contact                                                                               -gender
+  -background_donate                                                                                -photo
+  -background_events                                                                                -lien_story
+  -background_faq
+  -background_index
+  -background_volunteers
+  
+
+                                                              About(application)
+
+
+
+ *about                           *services                                                *domaine_don               *icon                *objectif
+  -titre                           -titre                                                   -titre                    -nom                 -titre
+  -publicite                       -description                                             -description              -icon                -description
+  -description                     -icon                                                    -icon(fk)
+  -image                                                                                   
+  
+  
+                                                                   Blog(application)
+                                                                  
+*beneficiaire                   *categorie                         *tags                           *volunteers                *faq
+ -titre                          -nom                               -nom                            -image                     -titre
+ -image                                                             -lien                           -nom                       -lien
+ -description                                                                                       -fonction
+ -comment(fk)                                                                                       -montant
+ -like(fk)                                                                                          -type_don
+ -categorie(fk)
+ -tags(m2m)
+
+
+                                                          Kaussid(application)
+
+
+
+*events                    *causes                       *donate                    *type_don                 *montant_don                *organizer
+ -photo                     -photo                        -titre                     -nom                      -prix                       -nom
+ -projet                    -titre                        -type_don(fk)                                        -other_amount               -lieu
+ -lieu                      -domaine                      -montant_don(fk)                                                                 -biographie
+ -date                      -descriptiion                 -organizer(fk)
+                            -gaol
+                            -raised
+
+
+  *personal_info
+    -name
+    -email
+    -phone
+    -country
+    -addres
+
+
+                                                      

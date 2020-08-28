@@ -1,0 +1,822 @@
+{% extends 'base/base.html' %}
+{%block content%}
+{% load static %}
+    <!-- Banner Section -->
+    <section class="banner-section">
+		<div class="banner-carousel kausid-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
+			<!-- Slide Item -->
+			<div class="slide-item">
+				<div class="image-layer" style="background-image:url('{% static 'images/main-slider/1.jpg' %}')"></div>
+
+				<div class="auto-container">
+					<div class="content-box">
+                        <div class="content">
+                            <div class="inner">
+                                <div class="sub-title">support the causes that matters</div>
+        						<h2>Let’s Make The <br>World Better Place</h2>
+        						<div class="links-box"><a href="{% url 'donate' %}" class="theme-btn btn-style-two"><span class="btn-title">Get involved</span></a></div>
+                            </div>
+                        </div>
+					</div>  
+				</div>
+			</div>
+
+			<!-- Slide Item -->
+			<div class="slide-item">
+				<div class="image-layer" style="background-image:url('{% static 'images/main-slider/2.jpg' %}')"></div>
+
+				<div class="auto-container">
+					<div class="content-box">
+                        <div class="content">
+                            <div class="inner">
+                                <div class="sub-title">support the causes that matters</div>
+                                <h2>Let’s Make The <br>World Better Place</h2>
+                                <div class="links-box"><a href="{% url 'donate' %}" class="theme-btn btn-style-two"><span class="btn-title">Get involved</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+
+			<!-- Slide Item -->
+			<div class="slide-item">
+				<div class="image-layer" style="background-image:url('{% static 'images/main-slider/3.jpg' %}')"></div>
+
+				<div class="auto-container">
+					<div class="content-box">
+                        <div class="content">
+                            <div class="inner">
+                                <div class="sub-title">support the causes that matters</div>
+                                <h2>Let’s Make The <br>World Better Place</h2>
+                                <div class="links-box"><a href="{% url 'donate' %}" class="theme-btn btn-style-two"><span class="btn-title">Get involved</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+
+		</div>
+    </section>
+    <!--End Banner Section -->
+
+	<!--About Section-->
+    <section class="about-section">
+        
+        <div class="auto-container">
+        	<div class="row clearfix">
+            	<!--Left Column-->
+                <div class="left-column col-lg-7 col-md-12 col-sm-12">
+                	<div class="inner">
+                    	<div class="sec-title">
+                        	<div class="sub-title"><span class="icon"></span> We believe what we achieve</div>
+                            <h2>Warmth & True Support <br>For Needed People</h2>
+                        </div>
+                        <div class="lower-box">
+                            <div class="image">
+                                <img src="{% static 'images/resource/video-image-1.jpg' %}" alt="">
+                                <a href="https://www.youtube.com/watch?v=C9rVAbcQH_U" class="lightbox-image">
+                                    <span class="fa fa-play"></span>
+                                </a>
+                            </div>
+                            <div class="text">Consectetur adipisicing elit usmod tempor incididunt laboret dolore magna aliquaut enim mini veniam quis trud exercitation ullamco laboris nisiut aliquip ex ea consequat. Duis aute rue dolor prehendrit lorem psum dolor sit amet consectetur adipisicing.</div>
+                            <div class="link-box"><a href="#" class="default-link">discover more</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--Right Column-->
+                <div class="right-column col-lg-5 col-md-12 col-sm-12">
+                	<div class="about-feature-box">
+                    	<div class="outer clearfix">
+                        	<!--About Feature-->
+                            <div class="about-feature col-md-6 col-sm-12">
+                            	<div class="inner-box">
+                                    <div class="content-box">
+                                        <div class="inner">
+                                            <h3><a href="#">Truly Get Inspired From Us</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--About Feature-->
+                            <div class="about-feature col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <div class="content-box">
+                                        <div class="inner">
+                                            <h3><a href="#">Become a Genuie Volunteer</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--About Feature-->
+                            <div class="about-feature col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <div class="content-box">
+                                        <div class="inner">
+                                            <h3><a href="#">Make a Donation to Achieve</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--About Feature-->
+                            <div class="about-feature col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <div class="content-box">
+                                        <div class="inner">
+                                            <h3><a href="#">Adoption For the Betterment</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!--Causes Section-->
+    <section class="causes-section">
+        <div class="icon-one paroller" data-paroller-factor="-0.20" data-paroller-factor-lg="-0.20" data-paroller-factor-sm="-0.10" data-paroller-type="foreground" data-paroller-direction="horizontal"><span class="flaticon-heart-2"></span></div>
+        
+        <div class="icon-two paroller" data-paroller-factor="0.20" data-paroller-factor-lg="0.15" data-paroller-factor-sm="0.10" data-paroller-type="foreground" data-paroller-direction="horizontal"><span class="flaticon-donation"></span></div>
+
+        <div class="icon-three paroller" data-paroller-factor="-0.10" data-paroller-factor-lg="-0.15" data-paroller-factor-sm="0.10" data-paroller-type="foreground" data-paroller-direction="horizontal"><span class="flaticon-shelter"></span></div>
+
+        <div class="icon-four paroller" data-paroller-factor="-0.10" data-paroller-factor-lg="-0.15" data-paroller-factor-sm="0.10" data-paroller-type="foreground" data-paroller-direction="vertical"><span class="flaticon-money-jar"></span></div>
+
+        <div class="icon-five paroller" data-paroller-factor="-0.10" data-paroller-factor-lg="-0.15" data-paroller-factor-sm="0.10" data-paroller-type="foreground" data-paroller-direction="horizontal"><span class="flaticon-dove-2"></span></div>
+        
+        <div class="icon-six paroller" data-paroller-factor="0.10" data-paroller-factor-lg="0.15" data-paroller-factor-sm="0.10" data-paroller-type="foreground" data-paroller-direction="horizontal"><span class="flaticon-gift-box"></span></div>
+
+        <div class="icon-seven paroller" data-paroller-factor="0.30" data-paroller-factor-lg="0.30" data-paroller-factor-sm="0.10" data-paroller-type="foreground" data-paroller-direction="vertical"><span class="flaticon-heart-2"></span></div>
+
+        <div class="auto-container">
+        
+        	<div class="sec-title centered">
+                <div class="upper-icon"></div>
+                <h2>Latest Causes</h2>
+                <div class="text">We believe what we achieve</div>
+            </div>
+                        
+        	<div class="row clearfix">
+            
+            	<!--Cause Block-->
+                <div class="cause-block col-lg-4 col-md-6 col-sm-12">
+                	<div class="inner-box wow fadeInUp" data-wow-delay="0ms">
+                    	<div class="image-box">
+                        	<figure class="image"><a href="{% url 'cause-single' %}"><img src="{% static 'images/resource/cause-image-1.jpg' %}" alt=""></a></figure>
+                            <div class="progress-box">
+                                <div class="bar">
+                                    <div class="bar-inner count-bar" data-percent="80%"><div class="count-text">80%</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="{% url 'cause-single' %}">Medical Treatment</a></h3>
+                            <div class="cause-title">Medicine</div>
+                            <div class="text">Auis nostrud exercitation ullam laboris aliquip exsed consequat duis aut psum dolore magna aliqua minim.</div>
+                            <div class="donate-info clearfix">
+                                <div class="goal"><i class="fa fa-crosshairs"></i> <span>Goal:</span> <strong>$10,000</strong> </div>
+                                <div class="raised"><i class="fa fa-chart-line"></i> <span>Raised:</span> <strong>$6,500</strong> </div>
+                            </div>
+                        </div>
+                        <div class="link-box"><a href="{% url 'donate' %}" class="theme-btn btn-style-two"><span class="btn-title">Donate Now</span></a></div>
+                    </div>
+                </div>
+                
+                <!--Cause Block-->
+                <div class="cause-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInUp" data-wow-delay="300ms">
+                        <div class="image-box">
+                            <figure class="image"><a href="{% url 'cause-single' %}"><img src="{% static 'images/resource/cause-image-2.jpg' %}" alt=""></a></figure>
+                            <div class="progress-box">
+                                <div class="bar">
+                                    <div class="bar-inner count-bar" data-percent="50%"><div class="count-text">50%</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="{% url 'cause-single' %}">Feed Hungry Children</a></h3>
+                            <div class="cause-title">Food &amp; Water</div>
+                            <div class="text">Auis nostrud exercitation ullam laboris aliquip exsed consequat duis aut psum dolore magna aliqua minim.</div>
+                            <div class="donate-info clearfix">
+                                <div class="goal"><i class="fa fa-crosshairs"></i> <span>Goal:</span> <strong>$10,000</strong> </div>
+                                <div class="raised"><i class="fa fa-chart-line"></i> <span>Raised:</span> <strong>$6,500</strong> </div>
+                            </div>
+                        </div>
+                        <div class="link-box"><a href="{% url 'donate' %}" class="theme-btn btn-style-two"><span class="btn-title">Donate Now</span></a></div>
+                    </div>
+                </div>
+
+                <!--Cause Block-->
+                <div class="cause-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInUp" data-wow-delay="600ms">
+                        <div class="image-box">
+                            <figure class="image"><a href="{% url 'cause-single' %}"><img src="{% static 'images/resource/cause-image-3.jpg' %}" alt=""></a></figure>
+                            <div class="progress-box">
+                                <div class="bar">
+                                    <div class="bar-inner count-bar" data-percent="40%"><div class="count-text">40%</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="{% url 'cause-single' %}">Education For People</a></h3>
+                            <div class="cause-title">Education</div>
+                            <div class="text">Auis nostrud exercitation ullam laboris aliquip exsed consequat duis aut psum dolore magna aliqua minim.</div>
+                            <div class="donate-info clearfix">
+                                <div class="goal"><i class="fa fa-crosshairs"></i> <span>Goal:</span> <strong>$10,000</strong> </div>
+                                <div class="raised"><i class="fa fa-chart-line"></i> <span>Raised:</span> <strong>$6,500</strong> </div>
+                            </div>
+                        </div>
+                        <div class="link-box"><a href="{% url 'donate' %}" class="theme-btn btn-style-two"><span class="btn-title">Donate Now</span></a></div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <!--Adopt Child Section-->
+    <section class="adopt-child">
+        <div class="image-layer" style="background-image:url('{% static 'images/background/adopt-child-bg.jpg' %}')"></div>
+
+        <div class="auto-container">
+
+            <div class="sec-title light">
+                <div class="row clearfix">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <div class="sub-title"><span class="icon"></span> We believe what we achieve</div>
+                        <h2>Adopt A Child</h2>
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                        <div class="text">Alit usmod tempor incididunt laboret doloe magna aliquaut enis min veniam quis trud exercitation ullamco laboris nisiut aliquip. Exea consequat duis aute rue dolor prehendrit lorem sed ipsum torabs.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Carousel-->
+            <div class="carousel-box">
+                <div class="kausid-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 10, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
+                    <!--Slide-->
+                    <div class="slide-item">
+                        <div class="row clearfix">
+                            <!--Text Column-->
+                            <div class="text-column col-lg-5 col-md-12 col-sm-12">
+                                <div class="inner">
+                                    <ul class="info-list">
+                                        <li class="clearfix"><strong>Name:</strong> <span>Simon Kallyiaz</span></li>
+                                        <li class="clearfix"><strong>Ages:</strong> <span>6 Years old</span></li>
+                                        <li class="clearfix"><strong>Race:</strong> <span>Black / African American</span></li>
+                                        <li class="clearfix"><strong>Gender:</strong> <span>Male</span></li>
+                                    </ul>
+                                    <div class="video-link"><a href="https://www.youtube.com/watch?v=C9rVAbcQH_U" class="lightbox-image"><span class="link-text">watch his story</span></a></div>
+                                </div>
+                            </div>
+                            <!--Image Column-->
+                            <div class="image-column col-lg-7 col-md-12 col-sm-12">
+                                <div class="image"><a href="{% static 'images/resource/featured-image-1.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/resource/featured-image-1.jpg' %}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide-->
+                    <div class="slide-item">
+                        <div class="row clearfix">
+                            <!--Text Column-->
+                            <div class="text-column col-lg-5 col-md-12 col-sm-12">
+                                <div class="inner">
+                                    <ul class="info-list">
+                                        <li class="clearfix"><strong>Name:</strong> <span>Kazer Rims</span></li>
+                                        <li class="clearfix"><strong>Ages:</strong> <span>6 Years old</span></li>
+                                        <li class="clearfix"><strong>Race:</strong> <span>Black / African American</span></li>
+                                        <li class="clearfix"><strong>Gender:</strong> <span>Male</span></li>
+                                    </ul>
+                                    <div class="video-link"><a href="https://www.youtube.com/watch?v=C9rVAbcQH_U" class="lightbox-image"><span class="link-text">watch his story</span></a></div>
+                                </div>
+                            </div>
+                            <!--Image Column-->
+                            <div class="image-column col-lg-7 col-md-12 col-sm-12">
+                                <div class="image"><a href="{% static 'images/resource/featured-image-17.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/resource/featured-image-17.jpg' %}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide-->
+                    <div class="slide-item">
+                        <div class="row clearfix">
+                            <!--Text Column-->
+                            <div class="text-column col-lg-5 col-md-12 col-sm-12">
+                                <div class="inner">
+                                    <ul class="info-list">
+                                        <li class="clearfix"><strong>Name:</strong> <span>Sara Bakr</span></li>
+                                        <li class="clearfix"><strong>Ages:</strong> <span>3 Years old</span></li>
+                                        <li class="clearfix"><strong>Race:</strong> <span>Syrian / American</span></li>
+                                        <li class="clearfix"><strong>Gender:</strong> <span>Female</span></li>
+                                    </ul>
+                                    <div class="video-link"><a href="https://www.youtube.com/watch?v=C9rVAbcQH_U" class="lightbox-image"><span class="link-text">watch her story</span></a></div>
+                                </div>
+                            </div>
+                            <!--Image Column-->
+                            <div class="image-column col-lg-7 col-md-12 col-sm-12">
+                                <div class="image"><a href="{% static 'images/resource/featured-image-19.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/resource/featured-image-19.jpg' %}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide-->
+                    <div class="slide-item">
+                        <div class="row clearfix">
+                            <!--Text Column-->
+                            <div class="text-column col-lg-5 col-md-12 col-sm-12">
+                                <div class="inner">
+                                    <ul class="info-list">
+                                        <li class="clearfix"><strong>Name:</strong> <span>Saaum Ramezi</span></li>
+                                        <li class="clearfix"><strong>Ages:</strong> <span>4 Years old</span></li>
+                                        <li class="clearfix"><strong>Race:</strong> <span>Black / African American</span></li>
+                                        <li class="clearfix"><strong>Gender:</strong> <span>Male</span></li>
+                                    </ul>
+                                    <div class="video-link"><a href="https://www.youtube.com/watch?v=C9rVAbcQH_U" class="lightbox-image"><span class="link-text">watch his story</span></a></div>
+                                </div>
+                            </div>
+                            <!--Image Column-->
+                            <div class="image-column col-lg-7 col-md-12 col-sm-12">
+                                <div class="image"><a href="{% static 'images/resource/featured-image-18.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/resource/featured-image-18.jpg' %}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Become Partner Section-->
+    <section class="become-partner">
+        <div class="image-layer" style="background-image:url('{% static 'images/background/bg-pattern-1.png' %')"></div>
+
+        <div class="auto-container">
+            <div class="sec-title centered">
+                <h2>Become a Smiling Partner today &amp; you can help children just like many!</h2>
+            </div>
+
+            <div class="row clearfix">
+                <!--Featured Icon Block-->
+                <div class="featured-icon-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="icon-box"><span class="flaticon-donation-2"></span></div>
+                        <div class="sub-text"><a href="#">Fund Raising Projects</a></div>
+                    </div>
+                </div>
+                <!--Featured Icon Block-->
+                <div class="featured-icon-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="icon-box"><span class="flaticon-world-1"></span></div>
+                        <div class="sub-text"><a href="#">Love your World</a></div>
+                    </div>
+                </div>
+                <!--Featured Icon Block-->
+                <div class="featured-icon-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="icon-box"><span class="flaticon-blood-2"></span></div>
+                        <div class="sub-text"><a href="#">Save Water &amp; Food</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Fun Facts Section-->
+    <section class="fun-facts-section">
+        <div class="auto-container">
+            <div class="fact-counter">
+                <div class="row clearfix">
+                    
+                    <!--Column-->
+                    <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                        <div class="inner-box">
+                            <div class="count-box"><span class="count-text" data-speed="3000" data-stop="98520">0</span></div>
+                            <div class="counter-title">raised Donations</div>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="inner-box">
+                            <div class="count-box"><span class="count-text" data-speed="1500" data-stop="306">0</span></div>
+                            <div class="counter-title">Causes Solved</div>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="inner-box">
+                            <div class="count-box"><span class="count-text" data-speed="1500" data-stop="84">0</span></div>
+                            <div class="counter-title">Volunteers</div>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
+                        <div class="inner-box">
+                            <div class="count-box"><span class="count-text" data-speed="3000" data-stop="1369">0</span></div>
+                            <div class="counter-title">Projects Done</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Join events Section-->
+    <section class="join-events">
+        <!--Upper Box-->
+        <div class="upper-box">
+            <div class="icon-one paroller" data-paroller-factor="-0.20" data-paroller-factor-lg="-0.20" data-paroller-factor-sm="-0.10" data-paroller-type="foreground" data-paroller-direction="horizontal"><span class="flaticon-care"></span></div>
+
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!--Image Column-->
+                    <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner">
+                            <figure class="image wow slideInLeft"><img src="{% static 'images/resource/featured-image-2.jpg' %}" alt=""></figure>
+                        </div>
+                    </div>
+                    <!--Left Column-->
+                    <div class="text-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner">
+                            <div class="sec-title">
+                                <div class="sub-title"><span class="icon"></span> We believe what we achieve</div>
+                                <h2>Join Our Events</h2>
+                            </div>
+                            <div class="text-content">
+                                <div class="text"> Consectetur adipisicing elit usmod tempor incididut laboret ipsum dolore magna aliquaut enim mini veniam quis trud exercitation ullamco sed labo nisiut aliquip ex ea consequat duis aute rue dolor.</div>
+                                <div class="link-box"><a href="#" class="default-link">view all events</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Lower Box-->
+        <div class="lower-box">
+            <div class="image-layer" style="background-image:url('{% static 'images/background/bg-pattern-1.png' %')"></div>
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!--Event Block-->
+                    <div class="default-event col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="date"><span>20</span> Aug</div>
+                            <h3><a href="event-single.html">Water Supply Charity Fundrise Event</a></h3>
+                            <ul class="info">
+                                <li><span class="far fa-clock"></span> Starts 5.00 PM</li>
+                                <li><span class="fa fa-map-marker-alt"></span> 121 Kings St. NY 26038</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Event Block-->
+                    <div class="default-event col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="date"><span>30</span> Aug</div>
+                            <h3><a href="event-single.html">Grow More Trees And Save Our Planet</a></h3>
+                            <ul class="info">
+                                <li><span class="far fa-clock"></span> Starts 5.00 PM</li>
+                                <li><span class="fa fa-map-marker-alt"></span> 121 Kings St. NY 26038</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Event Block-->
+                    <div class="default-event col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="date"><span>19</span> Sep</div>
+                            <h3><a href="event-single.html">Sports Complex Funds For Blind Students</a></h3>
+                            <ul class="info">
+                                <li><span class="far fa-clock"></span> Starts 5.00 PM</li>
+                                <li><span class="fa fa-map-marker-alt"></span> 121 Kings St. NY 26038</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Event Block-->
+                    <div class="default-event col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="date"><span>25</span> Oct</div>
+                            <h3><a href="event-single.html">Donations For Cancer Patients in Africa</a></h3>
+                            <ul class="info">
+                                <li><span class="far fa-clock"></span> Starts 5.00 PM</li>
+                                <li><span class="fa fa-map-marker-alt"></span> 121 Kings St. NY 26038</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Team Section-->
+    <section class="team-section">
+        <div class="icon-one paroller" data-paroller-factor="-0.20" data-paroller-factor-lg="-0.20" data-paroller-factor-sm="-0.10" data-paroller-type="foreground" data-paroller-direction="horizontal"><span class="flaticon-tshirt"></span></div>
+
+        <div class="auto-container">
+        
+            <div class="sec-title centered">
+                <div class="upper-icon"></div>
+                <h2>Our Volunters</h2>
+                <div class="text">We believe what we achieve</div>
+            </div>
+                        
+            <div class="carousel-box">
+                <div class="kausid-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "2" } , "800":{ "items" : "2" }, "1024":{ "items" : "3" }}}'>
+                    <!--Team Block-->
+                    <div class="team-block">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-1.jpg' %}" alt=""></a></figure>
+                            <h3><a href="#">Scott William</a></h3>
+                            <div class="designation">Head of Team</div>
+                        </div>
+                    </div>
+                    <!--Team Block-->
+                    <div class="team-block">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-2.jpg' %}" alt=""></a></figure>
+                            <h3><a href="#">Liam Irvines</a></h3>
+                            <div class="designation">Senior Admin</div>
+                        </div>
+                    </div>
+                    <!--Team Block-->
+                    <div class="team-block">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-3.jpg' %}" alt=""></a></figure>
+                            <h3><a href="#">Diana Leslie</a></h3>
+                            <div class="designation">Junior Volunteer</div>
+                        </div>
+                    </div>
+                    <!--Team Block-->
+                    <div class="team-block">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-1.jpg' %}" alt=""></a></figure>
+                            <h3><a href="#">Scott William</a></h3>
+                            <div class="designation">Head of Team</div>
+                        </div>
+                    </div>
+                    <!--Team Block-->
+                    <div class="team-block">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-2.jpg' %}" alt=""></a></figure>
+                            <h3><a href="#">Liam Irvines</a></h3>
+                            <div class="designation">Senior Admin</div>
+                        </div>
+                    </div>
+                    <!--Team Block-->
+                    <div class="team-block">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-3.jpg' %}" alt=""></a></figure>
+                            <h3><a href="#">Diana Leslie</a></h3>
+                            <div class="designation">Junior Volunteer</div>
+                        </div>
+                    </div>
+                    <!--Team Block-->
+                    <div class="team-block">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-1.jpg' %}" alt=""></a></figure>
+                            <h3><a href="#">Scott William</a></h3>
+                            <div class="designation">Head of Team</div>
+                        </div>
+                    </div>
+                    <!--Team Block-->
+                    <div class="team-block">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-2.jpg' %}" alt=""></a></figure>
+                            <h3><a href="#">Liam Irvines</a></h3>
+                            <div class="designation">Senior Admin</div>
+                        </div>
+                    </div>
+                    <!--Team Block-->
+                    <div class="team-block">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="#"><img src="{% static 'images/resource/team-image-3.jpg' %}" alt=""></a></figure>
+                            <h3><a href="#">Diana Leslie</a></h3>
+                            <div class="designation">Junior Volunteer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonial Section-->
+    <section class="testimonial-section">
+        <div class="image-layer" style="background-image:url('{% static 'images/background/bg-pattern-2.jpg' %}')"></div>
+
+        <div class="auto-container">
+        
+            <div class="sec-title centered">
+                <div class="upper-icon"></div>
+                <h2>What People Saying About Us!</h2>
+            </div>
+                        
+            <div class="carousel-box">
+                <div class="kausid-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "1" }, "1024":{ "items" : "1" }}}'>
+                    <!--Testimonial Block-->
+                    <div class="testimonial-block">
+                        <div class="inner">
+                            <div class="text">Since vindictively over agile the some far well besides constructively well airy then one during with close excellent grabbed gosh contrary far dalmatian upheld intrepid bought and toucan majestic more some apart dear boa much cast falcon a dwelled ouch busy.</div>
+                            <div class="info">
+                                <div class="icon"><span class="flaticon-straight-quotes"></span></div>
+                                <div class="author">Sandy Thomas</div>
+                                <div class="designation">Donator</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Testimonial Block-->
+                    <div class="testimonial-block">
+                        <div class="inner">
+                            <div class="text">Since vindictively over agile the some far well besides constructively well airy then one during with close excellent grabbed gosh contrary far dalmatian upheld intrepid bought and toucan majestic more some apart dear boa much cast falcon a dwelled ouch busy.</div>
+                            <div class="info">
+                                <div class="icon"><span class="flaticon-straight-quotes"></span></div>
+                                <div class="author">Sandy Thomas</div>
+                                <div class="designation">Donator</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Testimonial Block-->
+                    <div class="testimonial-block">
+                        <div class="inner">
+                            <div class="text">Since vindictively over agile the some far well besides constructively well airy then one during with close excellent grabbed gosh contrary far dalmatian upheld intrepid bought and toucan majestic more some apart dear boa much cast falcon a dwelled ouch busy.</div>
+                            <div class="info">
+                                <div class="icon"><span class="flaticon-straight-quotes"></span></div>
+                                <div class="author">Sandy Thomas</div>
+                                <div class="designation">Donator</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--How We Help Section-->
+    <section class="how-we-help">
+        <div class="image-layer" style="background-image:url('{% static 'images/background/parallax-bg-1.jpg' %}')"></div>
+
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Text Column-->
+                <div class="text-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="sec-title light">
+                            <div class="sub-title"><span class="icon"></span> We believe what we achieve</div>
+                            <h2>We help thousands of children, arrange food & building houses!</h2>
+                        </div>
+                        <div class="info-list">
+                            <ul class="clearfix">
+                                <li><div class="icon"><span class="flaticon-first-aid-kit"></span></div><span class="title">Medical</span></li>
+                                <li><div class="icon"><span class="flaticon-book"></span></div><span class="title">Education</span></li>
+                                <li><div class="icon"><span class="flaticon-shelter"></span></div><span class="title">Shelter</span></li>
+                            </ul>
+                        </div>
+                        <div class="link-box"><a href="#" class="theme-btn btn-style-one"><span class="btn-title">More articles</span></a></div>
+                    </div>
+                </div>
+
+                <!--News Column-->
+                <div class="news-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="news-post">
+                            <div class="post-thumb"><a href="blog-single.html"><img src="{% static 'images/resource/post-thumb-1.jpg' %}" alt=""></a></div>
+                            <h3><a href="blog-single.html">Millions Collected By Kausid Charity For Poor Families: By Sources</a></h3>
+                            <div class="post-info">By Mark Shawn &ensp;|&ensp; July 23, 2019</div>
+                        </div>
+                        <div class="news-post">
+                            <div class="post-thumb"><a href="blog-single.html"><img src="{% static 'images/resource/post-thumb-2.jpg' %}" alt=""></a></div>
+                            <h3><a href="blog-single.html">Popular Fundraising Pages Could Be Useful, Experts Says Everyone</a></h3>
+                            <div class="post-info">By Mark Shawn &ensp;|&ensp; July 23, 2019</div>
+                        </div>
+                        <div class="news-post">
+                            <div class="post-thumb"><a href="blog-single.html"><img src="{% static 'images/resource/post-thumb-3.jpg' %}" alt=""></a></div>
+                            <h3><a href="blog-single.html">With Much Need, What's The Best Way To Donate time Or Money?</a></h3>
+                            <div class="post-info">By Mark Shawn &ensp;|&ensp; July 23, 2019</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section class="contact-section">
+        <div class="icon-one paroller" data-paroller-factor="-0.20" data-paroller-factor-lg="-0.20" data-paroller-factor-sm="-0.10" data-paroller-type="foreground" data-paroller-direction="horizontal"><span class="flaticon-heart-2"></span></div>
+        
+        <div class="icon-two paroller" data-paroller-factor="0.20" data-paroller-factor-lg="0.15" data-paroller-factor-sm="0.10" data-paroller-type="foreground" data-paroller-direction="horizontal"><span class="flaticon-heart-2"></span></div>
+
+        <div class="icon-three paroller" data-paroller-factor="-0.10" data-paroller-factor-lg="-0.15" data-paroller-factor-sm="0.10" data-paroller-type="foreground" data-paroller-direction="horizontal"><span class="flaticon-dove"></span></div>
+
+        <div class="auto-container">
+        
+            <div class="sec-title centered">
+                <div class="upper-icon"></div>
+                <h2>Spread The Love & Get Involved!</h2>
+                <div class="text">Join Us To Save The World Of Humanitarian And Feel Happy To Support</div>
+            </div>
+            <div class="row clearfix">
+
+                <!--Form Column--->
+                <div class="form-column col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="shape-box"><h3>Working Together To Make A Difference</h3></div>
+                        <div class="default-form contact-form">
+                            <form method="post" action="http://t.commonsupport.xyz/kausid/sendemail.php" id="contact-form">
+                                <div class="row clearfix">                                    
+                                    <div class="col-md-6 col-sm-12 form-group">
+                                        <div class="field-label">Your Name</div>
+                                        <input type="text" name="username" placeholder="" required="">
+                                    </div>
+                                    
+                                    <div class="col-md-6 col-sm-12 form-group">
+                                        <div class="field-label">Email</div>
+                                        <input type="email" name="email" placeholder="" required="">
+                                    </div>
+            
+                                    <div class="col-md-6 col-sm-12 form-group">
+                                        <div class="field-label">Phone</div>
+                                        <input type="text" name="phone" placeholder="" required="">
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12 form-group">
+                                        <div class="field-label">How we can help?</div>
+                                        <input type="text" name="subject" placeholder="" required="">
+                                    </div>
+
+                                    <div class="col-md-12 col-sm-12 form-group">
+                                        <div class="field-label">Message</div>
+                                        <textarea name="message" placeholder="Write your message"></textarea>
+                                    </div>
+            
+                                    <div class="col-md-12 col-sm-12 form-group">
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Send Message</span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Image Column--->
+                <div class="image-column col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="icon-1 paroller" data-paroller-factor="-0.30" data-paroller-factor-lg="-0.20" data-paroller-factor-sm="-0.20" data-paroller-type="foreground" data-paroller-direction="vertical"></div>
+                        <div class="icon-2 paroller" data-paroller-factor="0.30" data-paroller-factor-lg="0.20" data-paroller-factor-sm="0.10" data-paroller-type="foreground" data-paroller-direction="vertical"></div>
+                        <figure class="image"><img src="{% static 'images/resource/featured-image-3.jpg' %}" alt=""></figure>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sponsors-outer">
+            <div class="auto-container">
+                <!--Sponsors Carousel-->
+                <div class="kausid-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 40, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "2" }, "768" :{ "items" : "3" } , "800":{ "items" : "3" }, "1024":{ "items" : "4" }}}'>
+                    <div class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/1.png' %" alt=""></a></figure></div>
+                    <div class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/2.png' %" alt=""></a></figure></div>
+                    <div class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/3.png' %" alt=""></a></figure></div>
+                    <div class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/4.png' %" alt=""></a></figure></div>
+                    <div class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/1.png' %" alt=""></a></figure></div>
+                    <div class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/2.png' %" alt=""></a></figure></div>
+                    <div class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/3.png' %" alt=""></a></figure></div>
+                    <div class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/4.png' %" alt=""></a></figure></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <div class="image-layer" style="background-image:url('{% static 'images/background/bg-pattern-1.png' %')"></div>
+        
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="title-column col-xl-9 col-lg-12 col-md-12 col-sm-12">
+                    <h2>Become a vital part of Kausid & make a real difference to lives of many!</h2>
+                </div>
+                <div class="link-column col-xl-3 col-lg-12 col-md-12 col-sm-12">
+                    <div class="link-box">
+                        <a href="#" class="theme-btn btn-style-two"><span class="btn-title">join to Volunteer</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{%endblock content%}
+   
