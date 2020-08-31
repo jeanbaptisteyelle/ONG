@@ -38,6 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website.apps.WebsiteConfig',
+    'about.apps.AboutConfig',
+    'blog.apps.BlogConfig',
+    'kaussid.apps.KaussidConfig',
+
+
+
+
+
 ]
 
 MIDDLEWARE = [

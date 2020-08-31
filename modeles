@@ -2,12 +2,12 @@
                                                      
                                           
 *siteinfo                       * newletter             * Reseau_sociaux       *contact          *information     *lieu          *need_people
-  -carousel_bg                   -email                  -icon                 -image_bg         -nom              -pays          -titre
-  -titre_caroussel                                        -nom                  -titre            -email           -adresse       -description
-  -telephone                                             -lien                  -description      -telephone       -phone         -lien_video
-  -courriel                                                                     -icon             -help            -email         -proposition
-  -adresse                                                                      -information(fk)  -message
-  -slogan                                                                       -lieu(fk)
+  -carousel_bg                   -email                  -icon                  -titre             -nom            -pays           -titre
+  -titre_caroussel                                        -nom                  -description       -email          -phone           -adresse       
+  -telephone                                             -lien                  -icon             -telephone        -email         -lien_video
+  -courriel                                                                     -lieu(fk)          -help                            -proposition
+  -adresse                                                                                         -message                        -description
+  -slogan                                                                       
   -logo_slogan                                                                  
   -image_don
   -message_join_volunter        *fundrising             *temoignage             *payment_amount    *adopt             *like
