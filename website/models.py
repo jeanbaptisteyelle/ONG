@@ -89,18 +89,19 @@ class ReseauSociau(models.Model):
     def __str__(self):
         return self.icones
 
-class Lieu(models.Model):
+class Lieu_contact(models.Model):
     pays = models.CharField(max_length=250)
     email= models.EmailField(max_length=254)
     phone = models.CharField(max_length=250)
+    adresse = models.CharField(max_length=250, null=True)
 
     date_add = models.DateTimeField(auto_now_add=True)
     date_update = models.DateTimeField(auto_now_add=True)
     status = models.BooleanField(default=True )
 
     class Meta:
-        verbose_name =  "Lieu"
-        verbose_name_plural = "Lieux"
+        verbose_name =  "Lieu_contact"
+        verbose_name_plural = "Lieu_contacts"
 
     def __str__(self):
         return self.pays
@@ -109,15 +110,9 @@ class Lieu(models.Model):
 
 class Contact(models.Model):
     titre = models.CharField(max_length=250)
-    description = models.CharField(max_length=250)
+    description = models.TextField()
     message = models.TextField()
     image = models.ImageField(upload_to='image/contact')
-    ICONES = [
-        ('icon-1 paroller', 'paroller-1'),
-        ('icon-2 paroller', 'paroller-2')
-    ]
-    nom = models.CharField(choices = ICONES, max_length=250)
-    lieu = models.ForeignKey('Lieu', related_name='lieu_contact', on_delete=models.CASCADE)
 
     date_add = models.DateTimeField(auto_now_add=True)
     date_update = models.DateTimeField(auto_now_add=True)
@@ -129,6 +124,27 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.titre
+
+
+class Contact_icone(models.Model):
+    ICONES = [
+        ('icon-1 paroller', 'paroller-1'),
+        ('icon-2 paroller', 'paroller-2')
+    ]
+    nom = models.CharField(choices = ICONES, max_length=250)
+
+    date_add = models.DateTimeField(auto_now_add=True)
+    date_update = models.DateTimeField(auto_now_add=True)
+    status = models.BooleanField(default=True )
+
+    class Meta:
+        verbose_name = "Contact_icone"
+        verbose_name_plural = "Contact_icones"
+
+    def __str__(self):
+        return self.nom
+
+
 
 class Information(models.Model):
     nom = models.CharField(max_length=250)
@@ -150,9 +166,7 @@ class Information(models.Model):
 
 class Need_help(models.Model):
     titre = models.CharField(max_length=250)
-    adresse = models.CharField(max_length=250)
     lien_video = models.URLField(max_length=200)
-    proposition = models.CharField( max_length=50)
     description = models.TextField()
 
     date_add = models.DateTimeField(auto_now_add=True)

@@ -112,7 +112,7 @@ class ObjectifAdmin(admin.ModelAdmin):
     date_hierarchy = 'date_add'
     list_display_links = ['titre']
     fieldsets = [
-          ('Objectif_infos', {'fields':['titre','icones','description']}),
+          ('Objectif_infos', {'fields':['titre','description']}),
           ('standards', {'fields':['status']}),
           ]
           

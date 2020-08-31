@@ -143,14 +143,14 @@ class OrganizerAdmin(admin.ModelAdmin):
 
 @admin.register(models.Donate)
 class DonateAdmin(admin.ModelAdmin):
-    list_display = ('titre','type_don','date_add','date_update','status')
+    list_display = ('titre','date_add','date_update','status')
     list_filter = ('date_add','date_update','status')
     search_fields = ('titre',)
     date_hierarchy = 'date_add'
     list_display_links = ['titre']
 
     fieldsets = [
-          ('Donate_infos', {'fields':['titre','montant_don','organizer']}),
+          ('Donate_infos', {'fields':['titre','type_don','montant_don','organizer']}),
           ('standards', {'fields':['status']}),
           ]
 
@@ -168,7 +168,7 @@ class DonateAdmin(admin.ModelAdmin):
 
 
 @admin.register(models.Personal_name)
-class DonateAdmin(admin.ModelAdmin):
+class Personal_nameAdmin(admin.ModelAdmin):
     list_display = ('name','email','date_add','date_update','status')
     list_filter = ('date_add','date_update','status')
     search_fields = ('name',)
@@ -176,7 +176,7 @@ class DonateAdmin(admin.ModelAdmin):
     list_display_links = ['name']
 
     fieldsets = [
-          ('Donate_infos', {'fields':['name','email','phone','country','adresse']}),
+          ('Personal_name_infos', {'fields':['name','email','phone','country','adresse']}),
           ('standards', {'fields':['status']}),
           ]
 

@@ -63,9 +63,15 @@ class Icones(models.Model):
 
 
 class Domaine_don(models.Model):
+    icons = [
+        ('flaticon-first-aid-kit', 'first-aid-kit'),
+        ('flaticon-book', 'book'),
+        ('flaticon-shelter', 'shelter')
+    ]
+
     titre = models.CharField(max_length=250)
     description = models.TextField()
-    icones = models.ForeignKey(Icones, related_name='icones_domaine_don', on_delete=models.CASCADE)
+    icones = models.CharField(choices=icons, max_length=50)
 
     date_add = models.DateTimeField( auto_now_add=True)
     date_update = models.DateTimeField( auto_now_add=True)

@@ -16,17 +16,16 @@ class Categorie(models.Model):
     def __str__(self):
         return self.nom
 
-class Tags(models.Model):
+class Tag(models.Model):
     nom = models.CharField(max_length=250)
-    lien = models.CharField(max_length=150)
 
     date_add = models.DateTimeField(auto_now_add=True)
     date_update = models.DateTimeField(auto_now_add=True)
     status = models.BooleanField(default=True )
 
     class Meta:
-        verbose_name = "Tags"
-        verbose_name_plural = "Tagss"
+        verbose_name = "Tag"
+        verbose_name_plural = "Tags"
 
     def __str__(self):
         return self.nom
@@ -37,7 +36,7 @@ class Beneficiaire(models.Model):
     image = models.ImageField(upload_to='image/beneficiaire')
     description = models.TextField()
     categorie = models.ForeignKey(Categorie, related_name='categorie_beneficiaire', on_delete=models.CASCADE)
-    tags = models.ManyToManyField(Tags)
+    tags = models.ManyToManyField(Tag)
 
     date_add = models.DateTimeField(auto_now_add=True)
     date_update = models.DateTimeField(auto_now_add=True)
@@ -86,7 +85,7 @@ class Volunteers(models.Model):
 
 class Faq(models.Model):
     titre = models.CharField(max_length=250)
-    lien = models.CharField(max_length=250)
+    description = models.TextField(null=True)
 
     date_add = models.DateTimeField(auto_now_add=True)
     date_update = models.DateTimeField(auto_now_add=True)

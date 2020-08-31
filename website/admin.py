@@ -5,13 +5,13 @@ from django.utils.safestring import mark_safe
 
 @admin.register(models.Siteinfo)
 class SiteinfoAdmin(admin.ModelAdmin):
-    list_display = ('slogan','couriel','date_add','date_update','status','logo_view','logo_footer_view','image_don_view','logo_slogan_view','background_about_view','background_blog_view','background_blogSingle_view','background_causes_view','background_causeSingle_view','background_contact_view','background_donate_view','background_events_view','background_faq_view','background_index_view','background_volunteers_view','background_footer_view')
+    list_display = ('slogan','couriel','date_add','date_update','status','logo_view','logo_footer_view','image_don_view','logo_slogan_view','background_about_view','background_blog_view','background_blogSingle_view','background_causes_view','background_causeSingle_view','background_contact_view','background_donate_view','background_events_view','background_faq_view','background_volunteers_view','background_footer_view')
     list_filter = ('date_add','date_update','status')
     search_fields = ('slogan',)
     date_hierarchy = 'date_add'
     list_display_links = ['slogan']
     fieldsets = [
-          ('Siteinfo', {'fields':['telephone','couriel','copyrights','adresse','slogan','logo','logo_footer','logo_slogan','image_don','message_join_volunteers','background_about','background_blog','background_blogSingle','background_causes','background_causeSingle','background_contact','background_donate','background_events','background_faq','background_index','background_volunteers','background_footer']}),
+          ('Siteinfo', {'fields':['telephone','couriel','copyrights','adresse','slogan','logo','logo_footer','logo_slogan','image_don','message_join_volunteers','background_about','background_blog','background_blogSingle','background_causes','background_causeSingle','background_contact','background_donate','background_events','background_faq','background_volunteers','background_footer']}),
           ('standard', {'fields':['status']}),
           ]
 
@@ -56,9 +56,6 @@ class SiteinfoAdmin(admin.ModelAdmin):
     def background_faq_view(self,obj):
         return mark_safe("<img src='{url}' width='100px',height='50px'>".format(url=obj.background_faq.url))
 
-    def background_index_view(self,obj):
-        return mark_safe("<img src='{url}' width='100px',height='50px'>".format(url=obj.background_index.url))
-
     def background_volunteers_view(self,obj):
         return mark_safe("<img src='{url}' width='100px',height='50px'>".format(url=obj.background_volunteers.url))
 
@@ -85,7 +82,7 @@ class CarouselAdmin(admin.ModelAdmin):
     date_hierarchy = 'date_add'
     list_display_links = ['titre']
     fieldsets = [
-          ('Carousel_infos', {'fields':['titre','image_view']}),
+          ('Carousel_infos', {'fields':['titre','image']}),
           ('standards', {'fields':['status']}),
           ]
 
@@ -153,15 +150,15 @@ class ReseauSociauAdmin(admin.ModelAdmin):
     desactive.short_description = 'desactiver'
 
 
-@admin.register(models.Lieu)
-class LieuAdmin(admin.ModelAdmin):
+@admin.register(models.Lieu_contact)
+class Lieu_contactAdmin(admin.ModelAdmin):
     list_display = ('pays','date_add','date_update','status')
     list_filter = ('date_add','date_update','status')
     search_fields = ('pays',)
     date_hierarchy = 'date_add'
     list_display_links = ['pays']
     fieldsets = [
-          ('Lieu_infos', {'fields':['pays','email','phone',]}),
+          ('Lieu_contact_infos', {'fields':['pays','email','phone','adresse']}),
           ('standards', {'fields':['status']}),
           ]
 
@@ -184,7 +181,7 @@ class ContactAdmin(admin.ModelAdmin):
     date_hierarchy = 'date_add'
     list_display_links = ['titre']
     fieldsets = [
-          ('Contact_infos', {'fields':['titre','description','message','nom','lieu','image_view']}),
+          ('Contact_infos', {'fields':['titre','description','message','image']}),
           ('standards', {'fields':['status']}),
           ]
 
@@ -202,6 +199,38 @@ class ContactAdmin(admin.ModelAdmin):
         queryset.update(status=False)
         self.message_user(request, 'La selection a été desactivé avec succès')
     desactive.short_description = 'desactiver'
+
+
+
+@admin.register(models.Contact_icone)
+class Contact_iconeAdmin(admin.ModelAdmin):
+    list_display = ('nom','date_add','date_update','status')
+    list_filter = ('date_add','date_update','status')
+    search_fields = ('nom',)
+    date_hierarchy = 'date_add'
+    list_display_links = ['nom']
+    fieldsets = [
+          ('Contact_icone_infos', {'fields':['nom']}),
+          ('standards', {'fields':['status']}),
+          ]
+
+    def image_view(self,obj):
+            return mark_safe("<img src='{url}' width='100px',height='50px'>".format(url=obj.image.url))
+
+
+    actions = ('active','desactive')
+    def active(self, request, queryset):
+        queryset.update(status=True)
+        self.message_user(request, 'La selection a été activé avec succès')
+    active.short_description = 'activer'
+        
+    def desactive(self, request, queryset):
+        queryset.update(status=False)
+        self.message_user(request, 'La selection a été desactivé avec succès')
+    desactive.short_description = 'desactiver'
+
+
+
 
 @admin.register(models.Information)
 class InformationAdmin(admin.ModelAdmin):
@@ -230,13 +259,13 @@ class InformationAdmin(admin.ModelAdmin):
 
 @admin.register(models.Need_help)
 class Need_helpAdmin(admin.ModelAdmin):
-    list_display = ('titre','adresse','date_add','date_update','status')
+    list_display = ('titre','date_add','date_update','status')
     list_filter = ('date_add','date_update','status')
     search_fields = ('titre',)
     date_hierarchy = 'date_add'
     list_display_links = ['titre']
     fieldsets = [
-          ('Need_help_infos', {'fields':['titre','adresse','lien_video','proposition','description']}),
+          ('Need_help_infos', {'fields':['titre','lien_video','description']}),
           ('standards', {'fields':['status']}),
           ]
 

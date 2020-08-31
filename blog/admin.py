@@ -28,16 +28,16 @@ class CategorieAdmin(admin.ModelAdmin):
     desactive.short_description = 'desactiver'
 
 
-@admin.register(models.Tags)
-class TagsAdmin(admin.ModelAdmin):
-    list_display = ('nom','lien','date_add','date_update','status')
+@admin.register(models.Tag)
+class TagAdmin(admin.ModelAdmin):
+    list_display = ('nom','date_add','date_update','status')
     list_filter = ('date_add','date_update','status')
     search_fields = ('nom',)
     date_hierarchy = 'date_add'
     list_display_links = ['nom']
 
     fieldsets = [
-          ('Tags_infos', {'fields':['nom','lien']}),
+          ('Tag_infos', {'fields':['nom']}),
           ('standards', {'fields':['status']}),
           ]
 
@@ -137,7 +137,7 @@ class FaqAdmin(admin.ModelAdmin):
     date_hierarchy = 'date_add'
     list_display_links = ['titre']
     fieldsets = [
-          ('Faq_infos', {'fields':['titre','lien']}),
+          ('Faq_infos', {'fields':['titre','description']}),
           ('standards', {'fields':['status']}),
           ]
 

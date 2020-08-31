@@ -23,9 +23,9 @@ class Cause(models.Model):
     photo = models.ImageField(upload_to='photo/Causes')
     titre = models.CharField(max_length=150)
     domaine = models.CharField(max_length=250)
-    description = models.DateTimeField(auto_now_add=False)
-    gaol = models.DateTimeField(auto_now_add=False)
-    raised = models.DateTimeField(auto_now_add=False)
+    description = models.TextField()
+    gaol = models.CharField(max_length=50)
+    raised = models.CharField(max_length=50)
 
     date_add = models.DateTimeField(auto_now_add=True)
     date_update = models.DateTimeField(auto_now_add=True)
@@ -36,7 +36,7 @@ class Cause(models.Model):
         verbose_name_plural = "Causes"
 
     def __str__(self):
-        return self.lieu
+        return self.titre
 
 class Type_don(models.Model):
     nom = models.CharField(max_length=150)
