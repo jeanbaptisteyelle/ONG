@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from . import apiviews
 
 urlpatterns = [
     path('', views.blog, name='blog'),

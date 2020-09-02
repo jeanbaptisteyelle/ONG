@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'about.apps.AboutConfig',
     'blog.apps.BlogConfig',
     'kaussid.apps.KaussidConfig',
-
+    'rest_framework',
 
 
 

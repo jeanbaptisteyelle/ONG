@@ -261,5 +261,5 @@ class Utilisateur(models.Model):
         verbose_name_plural = "Utilisateurs"
 
     def __str__(self):
-        return str(self.photo)
+        return str(self.user)
 
