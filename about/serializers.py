@@ -23,3 +23,5 @@ class AboutSerializer(serializers.ModelSerializer):
         model = models.About
         fields = '__all__'
 
+
+

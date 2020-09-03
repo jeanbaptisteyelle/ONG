@@ -31,3 +31,4 @@ class CategorieSerializer(serializers.ModelSerializer):
 
 
 
+

@@ -53,6 +53,11 @@ class NewletterSerializer(serializers.ModelSerializer):
         model = models.Newletter
         fields = '__all__'
 
+class ReseauSociauSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.ReseauSociau
+        fields = '__all__'
+
 
 
 
